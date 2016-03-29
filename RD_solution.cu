@@ -10,7 +10,7 @@
 
 #define Width 3
 #define Height 3
-#define Depth (1<<18)
+#define Depth (1<<25)
 
 __global__ void TimesMatrixPara(float *B, float *C, int a) {
     int k = blockIdx.x * blockDim.x + threadIdx.x;
